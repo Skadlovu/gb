@@ -1,0 +1,86 @@
+{%extends 'base.html'%}
+{%load static%}
+
+{%block title%}
+GENERAL BEARINGS~SERVICES
+{%endblock%}
+{%block content%}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header text-center">Services
+                <small>over and above bearings</small>
+            </h1>
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a>
+                </li>
+                <li class="active">Services</li>
+            </ol>
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Image Header -->
+    <div class="row col-lg-12">
+        <div class="col-lg-10 col-sm-offset-3">
+            <img class="img-responsive center" src="{% static 'base/img/2.jpg' %}" alt="">
+        </div>
+    </div>
+    <!-- /.row -->
+
+
+    <!-- Service Tabs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h2 class="page-header text-center">Value Added Services that we offer</h2>
+        </div>
+        <div class="col-lg-12">
+
+            <ul id="myTab" class="nav nav-tabs nav-justified">
+                <li class="active"><a href="#service-one" data-toggle="tab"><i class="fa fa-car "></i> 24 Hour Towing
+                    Services</a>
+                </li>
+                <li class=""><a href="#service-two" data-toggle="tab"><i class="fa fa-plane"></i> International Bearing
+                    Sourcing</a>
+                </li>
+                <li class=""><a href="#service-three" data-toggle="tab"><i class="fa fa-truck"></i> Deliveries To
+                    Premises</a>
+                </li>
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade active in" id="service-one">
+                    <h4>24 Hour Towing Services</h4>
+                    <li>We boast of a reliable twenty four vehicle towing services for customers
+                    </li>
+                    <li>We take the vehicle wherever the client wants it to be, whether it is the parking bay or your
+                        trusted mechanic, we've got you
+                    </li>
+                </div>
+                <div class="tab-pane fade" id="service-two">
+                    <h4>International Bearing Sourcing</h4>
+                    <li>We have long standing relationships with a host of international bearings suppliers and
+                        manufactures, giving us the edge to procure any bearing you can think of.
+                    </li>
+                    <li>We have quick turnaround times, we can get most orders to you within 8 business days. We also
+                        have a premium freight service as well, with even quicker turnaround times
+                    </li>
+                </div>
+                <div class="tab-pane fade" id="service-three">
+                    <h4>Deliveries To Premises</h4>
+                    <li>we also offer delivery services for all bearings purchased with us, we have a reliable fleet
+                        that delivers in time, at the correct location, all the time, try us.
+                    <li>
+                        there's no delivery that is too small or too big, nor there is a delivery that is too important
+                        or too insignificant, with us you are guaranteed quality service every time
+                    </li>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+{%endblock%}
